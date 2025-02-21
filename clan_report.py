@@ -14,5 +14,16 @@ def main():
             print(war)
             print("-" * 20)
 
+    if clan.currentwar:
+        print(clan.currentwar)
+        print("-" * 20)
+        yesno = input("Would you like to save war to the database?: Y | n")
+        if yesno.lower() == 'y':
+            clan.save_war_to_db()
+        else:
+            print("War not saved to database.")
+    
+    print("Ending Program.")
+
 if __name__ == "__main__":
     main()

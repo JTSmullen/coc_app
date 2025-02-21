@@ -12,7 +12,6 @@ class Basic_Clan_Info():
         self._requiredTrophies = data['requiredTrophies']
         self._requiredBuilderBaseTrophies = data['requiredBuilderBaseTrophies']
         self._requiredTownhallLevel = data['requiredTownhallLevel']
-        self._chatLanguage = data['chatLanguage']
         self._warWinStreak = data['warWinStreak']
         self._warWins = data['warWins']
         self._clanBuilderBasePoints = data['clanBuilderBasePoints']
@@ -58,9 +57,6 @@ class Basic_Clan_Info():
     def get_requiredTownhallLevel(self):
         return self._requiredTownhallLevel
 
-    def get_chatLanguage(self):
-        return self._chatLanguage
-
     def get_warWinStreak(self):
         return self._warWinStreak
 
@@ -99,7 +95,6 @@ class Basic_Clan_Info():
             f"  - Required Trophies: {self.get_requiredTrophies()}\n"
             f"  - Required Builder Base Trophies: {self.get_requiredBuilderBaseTrophies()}\n"
             f"  - Required Townhall Level: {self.get_requiredTownhallLevel()}\n"
-            f"  - Chat Language: {self.get_chatLanguage()}\n"
             f"  - Location: {self.get_location()}\n"
             f"  - War Frequency: {self.get_warFrequency()}\n"
             f"  - War Win Streak: {self.get_warWinStreak()}\n"

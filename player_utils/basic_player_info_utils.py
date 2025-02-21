@@ -12,7 +12,10 @@ class Basic_Player_Info():
         self._tag = data['tag']
         self._name = data['name']
         self._townHallLevel = data['townHallLevel']
-        self._townHallWeaponLevel = data['townHallWeaponLevel']
+        if self._townHallLevel < 12:
+            self._townHallWeaponLevel = 0
+        else:
+            self._townHallWeaponLevel = data['townHallWeaponLevel']
         self._expLevel = data['expLevel']
         self._trophies = data['trophies']
         self._bestTrophies = data['bestTrophies']
